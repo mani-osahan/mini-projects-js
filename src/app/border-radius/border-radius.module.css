@@ -1,0 +1,16 @@
+.border_container{
+    background-color: black;
+    border: 5px solid #e87400c8;
+    height: 250px;
+}
+
+.border_style_container{
+    display: flexbox;
+    position: relative;
+    padding: 10px;
+}
+
+.radius_values{
+    color: white;
+    
+}

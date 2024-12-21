@@ -1,0 +1,23 @@
+.container {
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.container a{ 
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.container a:hover{ 
+    color: aquamarine;
+}

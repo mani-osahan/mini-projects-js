@@ -1,0 +1,28 @@
+.calc_screen_text{
+    display: flex;
+    position:static;
+    height: 100px;
+    width: 500px;
+    border: 1px black solid;
+    border-radius: 10px;
+    justify-content: right;
+    align-items: center;
+    font-size: 42px;
+    color: black;
+}
+.calc_keys {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 5%;
+  column-gap: 1%;
+}
+.calc_container{
+    display: flex;
+    position: relative;
+}
+.calc_keys button {
+  font-size: 16px;
+  font-weight: 300;
+  width: 10rem;
+  height: 3rem;
+}
