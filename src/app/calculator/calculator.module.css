@@ -1,6 +1,6 @@
 .calc_screen_text{
     display: flex;
-    position:static;
+    position:relative;
     height: 100px;
     width: 500px;
     border: 1px black solid;
@@ -9,6 +9,9 @@
     align-items: center;
     font-size: 42px;
     color: black;
+}
+.calc_screen_text p{
+  max-width: fit-content;
 }
 .calc_keys {
   display: grid;
@@ -25,4 +28,22 @@
   font-weight: 300;
   width: 10rem;
   height: 3rem;
+}
+
+.above_screen{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 20px;
+  border: 1px solid black;
+  font-size: 13px;
+}
+
+.above_screen p{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5px;
+  padding-right: 20px
 }

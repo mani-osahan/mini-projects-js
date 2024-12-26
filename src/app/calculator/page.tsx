@@ -27,6 +27,8 @@ export default function Calculator() {
 
   let [screenText, setScreenText] = react.useState<Array<string>>(["0"]);
 
+  let [aboveScreen, setAboveScreen] = react.useState<Array<string>>(["0"]);
+
   let calcButtons: any = buttons.map((buttonValue) => {
     return (
       <button
@@ -37,8 +39,6 @@ export default function Calculator() {
             if (prev[0] === "0") {
               if (["=", "Del", "C"].includes(e.target.value)) {
                 return prev;
-              }else if (["%", "/", "*", "-", "+", "x",  "."].includes(e.target.value)) {
-                return [...prev, buttonValue];
               }
               return [...buttonValue];
 
@@ -66,8 +66,17 @@ export default function Calculator() {
 
   return (
     <div className={Styles.calc_container}>
-      <div className={Styles.above_screen}>{/* {screenText} */}</div>
-      <div className={Styles.calc_screen_text}>{screenText}</div>
+      <div className={Styles.calc_screen_text}>
+      <div className={Styles.above_screen}>
+        <p>
+        {aboveScreen}
+        </p>
+        </div>
+        <p>
+
+      {screenText}
+      </p>
+            </div>
 
       <div className={Styles.calc_keys}>{calcButtons}</div>
     </div>
